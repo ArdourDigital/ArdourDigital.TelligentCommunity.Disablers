@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  For more info on this file format visit http://docs.nuget.org/docs/reference/nuspec-reference.
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">  
+  <metadata>
+    <id>ArdourDigital.TelligentCommunity.Disablers</id>
+    <version>$version$</version>
+    <authors>Ardour Digital Limited</authors>
+    <description>Feature disabler releated classes for use with Telligent Community</description>
+    <language>en-US</language>
+    <licenseUrl>https://github.com/ArdourDigital/ArdourDigital.TelligentCommunity.Disablers/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/ArdourDigital/ArdourDigital.TelligentCommunity.Disablers</projectUrl>
+    <copyright>2016 - Ardour Digital Limited</copyright>
+    <tags>Telligent, Telligent-Community</tags>    
+  </metadata>
+</package>
