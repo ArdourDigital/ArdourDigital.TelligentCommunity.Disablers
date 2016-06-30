@@ -1,5 +1,7 @@
 # Disablers for Telligent Community - EXPERIMENTAL
 
+![Build Status](https://ardourdigital.visualstudio.com/_apis/public/build/definitions/8b5ba8e6-4059-46da-8ac1-e2bcf922c889/8/badge)
+
 This library provides functionality to allow standard features to be disabled for certain code scopes when working with Telligent Community.
 
 ## Supported Versions
