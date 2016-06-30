@@ -1,23 +1,19 @@
-﻿using System;
-using Telligent.Evolution.Components;
+﻿using Telligent.Evolution.Components;
 
 namespace ArdourDigital.TelligentCommunity.Disablers
 {
     // Uses references to CSContext for storing state - this is not upgrade safe - should look at alternatives for context
     public abstract class MonitoredDisabler<T> : Disabler
     {
-        private static readonly Guid _id;
-
         static MonitoredDisabler()
         {
-            _id = new Guid();
         }
 
         private static string ItemKey
         {
             get
             {
-                return string.Format("{0}_{1}_{2}", typeof(T).Name, _id, "State");
+                return string.Format("{0}_MonitorState", typeof(T).Name);
             }
         }
 
