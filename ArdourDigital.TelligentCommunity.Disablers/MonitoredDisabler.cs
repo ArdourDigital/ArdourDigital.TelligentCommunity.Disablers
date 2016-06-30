@@ -25,7 +25,7 @@ namespace ArdourDigital.TelligentCommunity.Disablers
         {
             get
             {
-                var isDisabled = CSContext.Current.Items[ItemKey];
+                var isDisabled = CSContext.Current == null || CSContext.Current.Items == null ? false : CSContext.Current.Items[ItemKey];
 
                 if (isDisabled == null)
                 {
@@ -43,11 +43,21 @@ namespace ArdourDigital.TelligentCommunity.Disablers
 
         protected override void Enter()
         {
+            if (CSContext.Current == null || CSContext.Current.Items == null)
+            {
+                return;
+            }
+
             CSContext.Current.Items[ItemKey] = true;
         }
 
         protected override void Exit()
         {
+            if (CSContext.Current == null || CSContext.Current.Items == null)
+            {
+                return;
+            }
+
             CSContext.Current.Items[ItemKey] = false;
         }
     }
