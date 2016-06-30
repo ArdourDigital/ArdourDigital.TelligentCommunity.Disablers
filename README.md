@@ -14,7 +14,7 @@ If you have a problem please raise an issue in Github, or even better create a P
 You can install the library by [downloading and referencing the latest version](https://github.com/ArdourDigital/ArdourDigital.TelligentCommunity.Disablers/releases/latest), or by using nuget:
 
 ```
-Install-Package ArdourDigital.TelligentCommunity.Disablers
+Install-Package ArdourDigital.TelligentCommunity.Disablers -Pre
 ```
 See the individual features below for more information on usage, and installation.
 
